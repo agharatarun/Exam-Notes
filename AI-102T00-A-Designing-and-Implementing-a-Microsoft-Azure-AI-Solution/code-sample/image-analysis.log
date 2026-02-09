@@ -1,0 +1,474 @@
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> pip install azure-ai-vision-imageanalysis==1.0.0b3
+Collecting azure-ai-vision-imageanalysis==1.0.0b3
+  Downloading azure_ai_vision_imageanalysis-1.0.0b3-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.0/64.0 kB 111.1 kB/s eta 0:00:00
+Collecting isodate>=0.6.1 (from azure-ai-vision-imageanalysis==1.0.0b3)
+  Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+Collecting azure-core>=1.30.0 (from azure-ai-vision-imageanalysis==1.0.0b3)
+  Downloading azure_core-1.32.0-py3-none-any.whl (198 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.9/198.9 kB 668.8 kB/s eta 0:00:00
+Collecting typing-extensions>=4.6.0 (from azure-ai-vision-imageanalysis==1.0.0b3)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Requirement already satisfied: requests>=2.21.0 in c:\users\student\miniconda3\lib\site-packages (from azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (2.29.0)
+Requirement already satisfied: six>=1.11.0 in c:\users\student\miniconda3\lib\site-packages (from azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (1.16.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\student\miniconda3\lib\site-packages (from requests>=2.21.0->azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\student\miniconda3\lib\site-packages (from requests>=2.21.0->azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\student\miniconda3\lib\site-packages (from requests>=2.21.0->azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (1.26.16)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\student\miniconda3\lib\site-packages (from requests>=2.21.0->azure-core>=1.30.0->azure-ai-vision-imageanalysis==1.0.0b3) (2023.5.7)
+Installing collected packages: typing-extensions, isodate, azure-core, azure-ai-vision-imageanalysis
+Successfully installed azure-ai-vision-imageanalysis-1.0.0b3 azure-core-1.32.0 isodate-0.7.2 typing-extensions-4.12.2
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> py image-analysis.py images/street.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+
+Dense Captions:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.07%)
+ Caption: 'a man walking on a street' (confidence: 69.03%)
+ Caption: 'a yellow car on the street' (confidence: 78.17%)
+ Caption: 'a black dog walking on the street' (confidence: 75.33%)
+ Caption: 'a blurry image of a blue car' (confidence: 82.01%)
+ Caption: 'a yellow taxi cab on the street' (confidence: 72.42%)
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/building.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a large white building with a dome and a large lawn with United States Capitol in the background' (confidence: 64.59%)
+
+Dense Captions:
+ Caption: 'a large white building with a dome and a large lawn' (confidence: 64.59%)
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/person.jpg  
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man in a suit' (confidence: 78.56%)
+
+Dense Captions:
+ Caption: 'a man in a suit' (confidence: 78.56%)
+ Caption: 'a man in a suit giving a thumbs up' (confidence: 80.91%)
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/person.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man in a suit' (confidence: 78.56%)
+
+Dense Captions:
+ Caption: 'a man in a suit' (confidence: 78.56%)
+ Caption: 'a man in a suit giving a thumbs up' (confidence: 80.91%)
+
+Tags:
+ Tag: 'clothing' (confidence: 99.72%)
+ Tag: 'person' (confidence: 99.33%)
+ Tag: 'human face' (confidence: 98.89%)
+ Tag: 'man' (confidence: 94.58%)
+ Tag: 'orator' (confidence: 90.42%)
+ Tag: 'glasses' (confidence: 89.57%)
+ Tag: 'speech' (confidence: 89.33%)
+ Tag: 'spokesperson' (confidence: 88.82%)
+ Tag: 'public speaking' (confidence: 85.86%)
+ Tag: 'shirt' (confidence: 85.21%)
+ Tag: 'gentleman' (confidence: 85.02%)
+ Tag: 'suit' (confidence: 84.60%)
+ Tag: 'healthcare' (confidence: 41.78%)
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/person.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man in a suit' (confidence: 78.55%)
+
+Dense Captions:
+ Caption: 'a man in a suit' (confidence: 78.56%)
+ Caption: 'a man in a suit giving a thumbs up' (confidence: 80.91%)
+
+Tags:
+ Tag: 'clothing' (confidence: 99.72%)
+ Tag: 'person' (confidence: 99.33%)
+ Tag: 'human face' (confidence: 98.89%)
+ Tag: 'man' (confidence: 94.58%)
+ Tag: 'orator' (confidence: 90.42%)
+ Tag: 'glasses' (confidence: 89.57%)
+ Tag: 'speech' (confidence: 89.33%)
+ Tag: 'spokesperson' (confidence: 88.82%)
+ Tag: 'public speaking' (confidence: 85.86%)
+ Tag: 'shirt' (confidence: 85.21%)
+ Tag: 'gentleman' (confidence: 85.02%)
+ Tag: 'suit' (confidence: 84.60%)
+ Tag: 'healthcare' (confidence: 41.78%)
+
+Objects in image:
+ person (confidence: 87.50%)
+  Results saved in objects.jpg
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/street.jpg  
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+
+Dense Captions:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+ Caption: 'a man walking on a street' (confidence: 69.03%)
+ Caption: 'a yellow car on the street' (confidence: 78.17%)
+ Caption: 'a black dog walking on the street' (confidence: 75.31%)
+ Caption: 'a blurry image of a blue car' (confidence: 82.01%)
+ Caption: 'a yellow taxi cab on the street' (confidence: 72.44%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.87%)
+ Tag: 'land vehicle' (confidence: 99.02%)
+ Tag: 'vehicle' (confidence: 98.89%)
+ Tag: 'building' (confidence: 98.55%)
+ Tag: 'road' (confidence: 95.98%)
+ Tag: 'wheel' (confidence: 95.14%)
+ Tag: 'street' (confidence: 94.71%)
+ Tag: 'person' (confidence: 93.01%)
+ Tag: 'clothing' (confidence: 91.19%)
+ Tag: 'taxi' (confidence: 90.95%)
+ Tag: 'car' (confidence: 84.01%)
+ Tag: 'dog' (confidence: 82.68%)
+ Tag: 'yellow' (confidence: 77.08%)
+ Tag: 'walking' (confidence: 74.11%)
+ Tag: 'city' (confidence: 64.80%)
+ Tag: 'woman' (confidence: 57.53%)
+
+Objects in image:
+ car (confidence: 72.40%)
+ taxi (confidence: 77.00%)
+ person (confidence: 78.10%)
+ dog (confidence: 54.40%)
+  Results saved in objects.jpg
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/street.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+
+Dense Captions:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+ Caption: 'a man walking on a street' (confidence: 69.02%)
+ Caption: 'a yellow car on the street' (confidence: 78.22%)
+ Caption: 'a black dog walking on the street' (confidence: 75.33%)
+ Caption: 'a blurry image of a blue car' (confidence: 82.01%)
+ Caption: 'a yellow taxi cab on the street' (confidence: 72.42%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.87%)
+ Tag: 'land vehicle' (confidence: 99.02%)
+ Tag: 'vehicle' (confidence: 98.89%)
+ Tag: 'building' (confidence: 98.55%)
+ Tag: 'road' (confidence: 95.98%)
+ Tag: 'wheel' (confidence: 95.14%)
+ Tag: 'street' (confidence: 94.71%)
+ Tag: 'person' (confidence: 93.01%)
+ Tag: 'clothing' (confidence: 91.19%)
+ Tag: 'taxi' (confidence: 90.95%)
+ Tag: 'car' (confidence: 84.01%)
+ Tag: 'dog' (confidence: 82.68%)
+ Tag: 'yellow' (confidence: 77.08%)
+ Tag: 'walking' (confidence: 74.11%)
+ Tag: 'city' (confidence: 64.80%)
+ Tag: 'woman' (confidence: 57.53%)
+
+Objects in image:
+ car (confidence: 72.40%)
+ taxi (confidence: 77.00%)
+ person (confidence: 78.10%)
+ dog (confidence: 54.40%)
+  Results saved in objects.jpg
+
+People in image:
+  Results saved in people.jpg
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/building.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a large white building with a dome and a large lawn with United States Capitol in the background' (confidence: 64.52%)
+
+Dense Captions:
+ Caption: 'a large white building with a dome and a large lawn' (confidence: 64.52%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.93%)
+ Tag: 'cloud' (confidence: 99.79%)
+ Tag: 'grass' (confidence: 99.76%)
+ Tag: 'tree' (confidence: 99.09%)
+ Tag: 'sky' (confidence: 98.95%)
+ Tag: 'building' (confidence: 96.15%)
+ Tag: 'dome' (confidence: 91.38%)
+ Tag: 'presidential palace' (confidence: 91.03%)
+ Tag: 'landmark' (confidence: 89.98%)
+ Tag: 'palace' (confidence: 89.63%)
+ Tag: 'plant' (confidence: 88.77%)
+ Tag: 'courthouse' (confidence: 84.78%)
+ Tag: 'field' (confidence: 82.64%)
+ Tag: 'city' (confidence: 76.11%)
+ Tag: 'large' (confidence: 68.73%)
+ Tag: 'park' (confidence: 54.24%)
+
+Objects in image:
+ building (confidence: 62.30%)
+  Results saved in objects.jpg
+
+People in image:
+  Results saved in people.jpg
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/building.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a large white building with a dome and a large lawn with United States Capitol in the background' (confidence: 64.52%)
+
+Dense Captions:
+ Caption: 'a large white building with a dome and a large lawn' (confidence: 64.52%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.93%)
+ Tag: 'cloud' (confidence: 99.79%)
+ Tag: 'grass' (confidence: 99.76%)
+ Tag: 'tree' (confidence: 99.09%)
+ Tag: 'sky' (confidence: 98.95%)
+ Tag: 'building' (confidence: 96.15%)
+ Tag: 'dome' (confidence: 91.38%)
+ Tag: 'presidential palace' (confidence: 91.03%)
+ Tag: 'landmark' (confidence: 89.98%)
+ Tag: 'palace' (confidence: 89.63%)
+ Tag: 'plant' (confidence: 88.77%)
+ Tag: 'courthouse' (confidence: 84.78%)
+ Tag: 'field' (confidence: 82.64%)
+ Tag: 'city' (confidence: 76.11%)
+ Tag: 'large' (confidence: 68.73%)
+ Tag: 'park' (confidence: 54.24%)
+
+Objects in image:
+ building (confidence: 62.30%)
+  Results saved in objects.jpg
+
+People in image:
+ {'x': 585, 'y': 410, 'w': 20, 'h': 38} (confidence: 85.64%)
+ {'x': 733, 'y': 400, 'w': 16, 'h': 48} (confidence: 84.59%)
+ {'x': 681, 'y': 411, 'w': 14, 'h': 37} (confidence: 82.86%)
+ {'x': 548, 'y': 384, 'w': 6, 'h': 8} (confidence: 9.52%)
+ {'x': 530, 'y': 384, 'w': 6, 'h': 8} (confidence: 8.21%)
+ {'x': 456, 'y': 385, 'w': 7, 'h': 7} (confidence: 6.45%)
+ {'x': 535, 'y': 384, 'w': 8, 'h': 8} (confidence: 4.23%)
+ {'x': 410, 'y': 220, 'w': 11, 'h': 23} (confidence: 3.96%)
+ {'x': 530, 'y': 384, 'w': 24, 'h': 8} (confidence: 3.83%)
+ {'x': 769, 'y': 383, 'w': 6, 'h': 16} (confidence: 1.32%)
+ {'x': 310, 'y': 385, 'w': 6, 'h': 9} (confidence: 1.11%)
+ {'x': 555, 'y': 385, 'w': 8, 'h': 8} (confidence: 0.84%)
+ {'x': 269, 'y': 386, 'w': 6, 'h': 9} (confidence: 0.56%)
+ {'x': 528, 'y': 384, 'w': 6, 'h': 8} (confidence: 0.49%)
+ {'x': 351, 'y': 384, 'w': 7, 'h': 11} (confidence: 0.46%)
+ {'x': 568, 'y': 385, 'w': 7, 'h': 11} (confidence: 0.45%)
+ {'x': 253, 'y': 386, 'w': 6, 'h': 8} (confidence: 0.39%)
+ {'x': 188, 'y': 385, 'w': 6, 'h': 9} (confidence: 0.38%)
+ {'x': 426, 'y': 381, 'w': 6, 'h': 11} (confidence: 0.37%)
+ {'x': 443, 'y': 384, 'w': 9, 'h': 8} (confidence: 0.35%)
+ {'x': 0, 'y': 392, 'w': 6, 'h': 19} (confidence: 0.33%)
+ {'x': 662, 'y': 392, 'w': 7, 'h': 8} (confidence: 0.30%)
+ {'x': 742, 'y': 388, 'w': 7, 'h': 12} (confidence: 0.30%)
+ {'x': 328, 'y': 382, 'w': 7, 'h': 10} (confidence: 0.27%)
+ {'x': 298, 'y': 384, 'w': 6, 'h': 9} (confidence: 0.23%)
+ {'x': 146, 'y': 391, 'w': 7, 'h': 11} (confidence: 0.15%)
+ {'x': 736, 'y': 390, 'w': 11, 'h': 15} (confidence: 0.14%)
+ {'x': 337, 'y': 377, 'w': 7, 'h': 15} (confidence: 0.14%)
+ {'x': 203, 'y': 387, 'w': 6, 'h': 9} (confidence: 0.13%)
+ {'x': 544, 'y': 394, 'w': 225, 'h': 68} (confidence: 0.12%)
+ {'x': 328, 'y': 379, 'w': 14, 'h': 14} (confidence: 0.12%)
+ {'x': 434, 'y': 383, 'w': 9, 'h': 9} (confidence: 0.11%)
+  Results saved in people.jpg
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/building.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a large white building with a dome and a large lawn with United States Capitol in the background' (confidence: 64.59%)
+
+Dense Captions:
+ Caption: 'a large white building with a dome and a large lawn' (confidence: 64.59%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.93%)
+ Tag: 'cloud' (confidence: 99.79%)
+ Tag: 'grass' (confidence: 99.76%)
+ Tag: 'tree' (confidence: 99.09%)
+ Tag: 'sky' (confidence: 98.95%)
+ Tag: 'building' (confidence: 96.15%)
+ Tag: 'dome' (confidence: 91.38%)
+ Tag: 'presidential palace' (confidence: 91.03%)
+ Tag: 'landmark' (confidence: 89.98%)
+ Tag: 'palace' (confidence: 89.63%)
+ Tag: 'plant' (confidence: 88.77%)
+ Tag: 'courthouse' (confidence: 84.78%)
+ Tag: 'field' (confidence: 82.64%)
+ Tag: 'city' (confidence: 76.11%)
+ Tag: 'large' (confidence: 68.73%)
+ Tag: 'park' (confidence: 54.24%)
+
+Objects in image:
+ building (confidence: 62.30%)
+  Results saved in objects.jpg
+
+People in image:
+ {'x': 585, 'y': 410, 'w': 20, 'h': 38} (confidence: 85.64%)
+ {'x': 733, 'y': 400, 'w': 16, 'h': 48} (confidence: 84.59%)
+ {'x': 681, 'y': 411, 'w': 14, 'h': 37} (confidence: 82.86%)
+ {'x': 548, 'y': 384, 'w': 6, 'h': 8} (confidence: 9.52%)
+ {'x': 530, 'y': 384, 'w': 6, 'h': 8} (confidence: 8.21%)
+ {'x': 456, 'y': 385, 'w': 7, 'h': 7} (confidence: 6.45%)
+ {'x': 535, 'y': 384, 'w': 8, 'h': 8} (confidence: 4.23%)
+ {'x': 410, 'y': 220, 'w': 11, 'h': 23} (confidence: 3.96%)
+ {'x': 530, 'y': 384, 'w': 24, 'h': 8} (confidence: 3.83%)
+ {'x': 769, 'y': 383, 'w': 6, 'h': 16} (confidence: 1.32%)
+ {'x': 310, 'y': 385, 'w': 6, 'h': 9} (confidence: 1.11%)
+ {'x': 555, 'y': 385, 'w': 8, 'h': 8} (confidence: 0.84%)
+ {'x': 269, 'y': 386, 'w': 6, 'h': 9} (confidence: 0.56%)
+ {'x': 528, 'y': 384, 'w': 6, 'h': 8} (confidence: 0.49%)
+ {'x': 351, 'y': 384, 'w': 7, 'h': 11} (confidence: 0.46%)
+ {'x': 568, 'y': 385, 'w': 7, 'h': 11} (confidence: 0.45%)
+ {'x': 253, 'y': 386, 'w': 6, 'h': 8} (confidence: 0.39%)
+ {'x': 188, 'y': 385, 'w': 6, 'h': 9} (confidence: 0.38%)
+ {'x': 426, 'y': 381, 'w': 6, 'h': 11} (confidence: 0.37%)
+ {'x': 443, 'y': 384, 'w': 9, 'h': 8} (confidence: 0.35%)
+ {'x': 0, 'y': 392, 'w': 6, 'h': 19} (confidence: 0.33%)
+ {'x': 662, 'y': 392, 'w': 7, 'h': 8} (confidence: 0.30%)
+ {'x': 742, 'y': 388, 'w': 7, 'h': 12} (confidence: 0.30%)
+ {'x': 328, 'y': 382, 'w': 7, 'h': 10} (confidence: 0.27%)
+ {'x': 298, 'y': 384, 'w': 6, 'h': 9} (confidence: 0.23%)
+ {'x': 146, 'y': 391, 'w': 7, 'h': 11} (confidence: 0.15%)
+ {'x': 736, 'y': 390, 'w': 11, 'h': 15} (confidence: 0.14%)
+ {'x': 337, 'y': 377, 'w': 7, 'h': 15} (confidence: 0.14%)
+ {'x': 203, 'y': 387, 'w': 6, 'h': 9} (confidence: 0.13%)
+ {'x': 544, 'y': 394, 'w': 225, 'h': 68} (confidence: 0.12%)
+ {'x': 328, 'y': 379, 'w': 14, 'h': 14} (confidence: 0.12%)
+ {'x': 434, 'y': 383, 'w': 9, 'h': 9} (confidence: 0.11%)
+  Results saved in people.jpg
+
+Removing background from image...
+  Results saved in background.png 
+
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/street.jpg  
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.07%)
+
+Dense Captions:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.07%)
+ Caption: 'a man walking on a street' (confidence: 69.03%)
+ Caption: 'a yellow car on the street' (confidence: 78.22%)
+ Caption: 'a black dog walking on the street' (confidence: 75.31%)
+ Caption: 'a blurry image of a blue car' (confidence: 82.01%)
+ Caption: 'a yellow taxi cab on the street' (confidence: 72.44%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.87%)
+ Tag: 'land vehicle' (confidence: 99.02%)
+ Tag: 'vehicle' (confidence: 98.89%)
+ Tag: 'building' (confidence: 98.55%)
+ Tag: 'road' (confidence: 95.98%)
+ Tag: 'wheel' (confidence: 95.14%)
+ Tag: 'street' (confidence: 94.71%)
+ Tag: 'person' (confidence: 93.01%)
+ Tag: 'clothing' (confidence: 91.19%)
+ Tag: 'taxi' (confidence: 90.95%)
+ Tag: 'car' (confidence: 84.01%)
+ Tag: 'dog' (confidence: 82.68%)
+ Tag: 'yellow' (confidence: 77.08%)
+ Tag: 'walking' (confidence: 74.11%)
+ Tag: 'city' (confidence: 64.80%)
+ Tag: 'woman' (confidence: 57.53%)
+
+Objects in image:
+ car (confidence: 72.40%)
+ taxi (confidence: 77.00%)
+ person (confidence: 78.10%)
+ dog (confidence: 54.40%)
+  Results saved in objects.jpg
+
+People in image:
+ {'x': 241, 'y': 109, 'w': 155, 'h': 399} (confidence: 94.99%)
+ {'x': 396, 'y': 264, 'w': 23, 'h': 58} (confidence: 24.93%)
+ {'x': 699, 'y': 262, 'w': 20, 'h': 33} (confidence: 22.45%)
+ {'x': 138, 'y': 230, 'w': 28, 'h': 31} (confidence: 6.96%)
+ {'x': 129, 'y': 188, 'w': 15, 'h': 26} (confidence: 1.09%)
+ {'x': 146, 'y': 188, 'w': 16, 'h': 25} (confidence: 1.02%)
+ {'x': 405, 'y': 263, 'w': 15, 'h': 28} (confidence: 0.96%)
+ {'x': 164, 'y': 187, 'w': 17, 'h': 25} (confidence: 0.84%)
+ {'x': 176, 'y': 187, 'w': 13, 'h': 25} (confidence: 0.45%)
+ {'x': 139, 'y': 186, 'w': 42, 'h': 29} (confidence: 0.19%)
+ {'x': 510, 'y': 262, 'w': 17, 'h': 10} (confidence: 0.12%)
+ {'x': 247, 'y': 247, 'w': 141, 'h': 121} (confidence: 0.11%)
+  Results saved in people.jpg
+
+Removing background from image...
+  Results saved in background.png 
+
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> python image-analysis.py images/street.jpg
+
+Analyzing image...
+
+Caption:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.05%)
+
+Dense Captions:
+ Caption: 'a man walking a dog on a leash on a street' (confidence: 82.07%)
+ Caption: 'a man walking on a street' (confidence: 69.03%)
+ Caption: 'a yellow car on the street' (confidence: 78.17%)
+ Caption: 'a black dog walking on the street' (confidence: 75.31%)
+ Caption: 'a blurry image of a blue car' (confidence: 82.01%)
+ Caption: 'a yellow taxi cab on the street' (confidence: 72.44%)
+
+Tags:
+ Tag: 'outdoor' (confidence: 99.87%)
+ Tag: 'land vehicle' (confidence: 99.02%)
+ Tag: 'vehicle' (confidence: 98.89%)
+ Tag: 'building' (confidence: 98.55%)
+ Tag: 'road' (confidence: 95.98%)
+ Tag: 'wheel' (confidence: 95.14%)
+ Tag: 'street' (confidence: 94.71%)
+ Tag: 'person' (confidence: 93.01%)
+ Tag: 'clothing' (confidence: 91.19%)
+ Tag: 'taxi' (confidence: 90.95%)
+ Tag: 'car' (confidence: 84.01%)
+ Tag: 'dog' (confidence: 82.68%)
+ Tag: 'yellow' (confidence: 77.08%)
+ Tag: 'walking' (confidence: 74.11%)
+ Tag: 'city' (confidence: 64.80%)
+ Tag: 'woman' (confidence: 57.53%)
+
+Objects in image:
+ car (confidence: 72.40%)
+ taxi (confidence: 77.00%)
+ person (confidence: 78.10%)
+ dog (confidence: 54.40%)
+  Results saved in objects.jpg
+
+People in image:
+ {'x': 241, 'y': 109, 'w': 155, 'h': 399} (confidence: 94.99%)
+ {'x': 396, 'y': 264, 'w': 23, 'h': 58} (confidence: 24.93%)
+ {'x': 699, 'y': 262, 'w': 20, 'h': 33} (confidence: 22.45%)
+ {'x': 138, 'y': 230, 'w': 28, 'h': 31} (confidence: 6.96%)
+ {'x': 129, 'y': 188, 'w': 15, 'h': 26} (confidence: 1.09%)
+ {'x': 146, 'y': 188, 'w': 16, 'h': 25} (confidence: 1.02%)
+ {'x': 405, 'y': 263, 'w': 15, 'h': 28} (confidence: 0.96%)
+ {'x': 164, 'y': 187, 'w': 17, 'h': 25} (confidence: 0.84%)
+ {'x': 176, 'y': 187, 'w': 13, 'h': 25} (confidence: 0.45%)
+ {'x': 139, 'y': 186, 'w': 42, 'h': 29} (confidence: 0.19%)
+ {'x': 510, 'y': 262, 'w': 17, 'h': 10} (confidence: 0.12%)
+ {'x': 247, 'y': 247, 'w': 141, 'h': 121} (confidence: 0.11%)
+  Results saved in people.jpg
+
+Removing background from image...
+  Results saved in background.png 
+
+PS C:\Users\Student\Downloads\mslearn-ai-vision\Labfiles\01-analyze-images\Python\image-analysis> 
